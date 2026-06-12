@@ -1,0 +1,52 @@
+/* ─────────────────────────────────────────
+   DESIGN SYSTEM — GAAN React
+   Tokens primitivos
+   Fuente: Figma Variables
+───────────────────────────────────────── */
+
+/* Neutrals */
+:root {
+  --Global-Neutrals-black: #000000;
+  --Global-Neutrals-800: #505050;
+  --Global-Neutrals-600: #767676;
+  --Global-Neutrals-400: #919191;
+  --Global-Neutrals-200: #D6D8D8;
+  --Global-Neutrals-100: #F4F4F4;
+  --Global-Neutrals-white: #FFFFFF;
+}
+
+/* Brand */
+:root {
+  --Global-pink: #B7788F;
+  --Global-red: #DC0028;
+  --Global-redLight: #FDEDED;
+  --Global-redDark: #B91E1E;
+  --Global-greenLight: #EBFFD6;
+  --Global-greenDark: #3D7417;
+  --Global-orangeLight: #FDEFD8;
+  --Global-orangeDark: #AA4813;
+}
+
+/* Agenda */
+:root {
+  --Agenda-llamada: #F9C5B6;
+  --Agenda-llamadaBg: #FEF9F8;
+  --Agenda-carta: #B49391;
+  --Agenda-cartaBg: #F8F4F4;
+  --Agenda-cita: #8C8C8C;
+  --Agenda-citaBg: #F3F3F3;
+  --Agenda-tarea: #C7C7C7;
+  --Agenda-tareaBg: #F9F9F9;
+  --Agenda-fax: #B36561;
+  --Agenda-faxBg: #F7F0EF;
+  --Agenda-correo: #E3C07B;
+  --Agenda-correoBg: #FCF9F2;
+  --Agenda-oportunidad: #E87E61;
+  --Agenda-oportunidadBg: #FCF9F2;
+  --Agenda-whatsapp: #B8B2A4;
+  --Agenda-whatsappBg: #F8F7F6;
+  --Agenda-visitaServicio: #E77387;
+  --Agenda-visitaServicioBg: #FDF1F3;
+  --Agenda-citaMedica: #FFA2A2;
+  --Agenda-citaMedicaBg: #FFF6F6;
+}
