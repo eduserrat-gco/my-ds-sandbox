@@ -1,0 +1,89 @@
+/* ── Botón grupo ── */
+
+.btn-grupo {
+  height: 30px;
+  min-width: 150px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Primary */
+.btn-grupo--primary.btn-grupo--default {
+  background: var(--fondo-componente-boton-primario-default);
+}
+.btn-grupo--primary.btn-grupo--hover {
+  background: var(--fondo-componente-boton-primario-hover);
+}
+.btn-grupo--primary.btn-grupo--disabled {
+  background: var(--fondo-control-deshabilitado);
+  cursor: not-allowed;
+}
+
+/* Secondary */
+.btn-grupo--secondary {
+  background: var(--fondo-superficie);
+  border-width: var(--button-secondary-border-width);
+  border-style: solid;
+}
+.btn-grupo--secondary.btn-grupo--default {
+  border-color: var(--border-oscuro);
+}
+.btn-grupo--secondary.btn-grupo--hover {
+  border-color: var(--border-default);
+}
+.btn-grupo--secondary.btn-grupo--disabled {
+  border-color: var(--border-claro);
+  cursor: not-allowed;
+}
+
+/* State layer */
+.btn-grupo__state-layer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--button-spacing-gap);
+  padding: var(--button-spacing-vertical-padding) var(--button-spacing-horizontal-padding);
+  height: 100%;
+}
+
+/* Labels */
+.btn-grupo--primary .btn-grupo__label {
+  color: var(--texto-componente-boton-primario);
+  font-family: 'Catalana Sans', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+}
+.btn-grupo--secondary.btn-grupo--default .btn-grupo__label {
+  color: var(--texto-cuerpo);
+  font-size: 14px;
+}
+.btn-grupo--secondary.btn-grupo--hover .btn-grupo__label {
+  color: var(--texto-boton-secundario-hover);
+  font-size: 12px;
+}
+.btn-grupo--secondary.btn-grupo--disabled .btn-grupo__label {
+  color: var(--texto-boton-secundario-disabled);
+  font-size: 12px;
+}
+
+/* Icon */
+.btn-grupo__icon {
+  color: var(--texto-componente-boton-primario);
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* Link */
+.btn-grupo-link {
+  display: inline-flex;
+  align-items: center;
+}
+.btn-grupo-link__label {
+  color: var(--texto-link-default);
+  font-family: 'Catalana Sans', sans-serif;
+  font-size: 12px;
+  text-decoration: underline;
+  cursor: pointer;
+}

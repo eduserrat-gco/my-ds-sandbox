@@ -1,1 +1,39 @@
- 
+/* ─────────────────────────────────────────
+   DESIGN SYSTEM — GAAN React
+   Tokens semánticos
+   Fuente: Figma Variables
+───────────────────────────────────────── */
+
+/* ── Botón grupo ── */
+
+/* Fondo */
+:root {
+  --fondo-componente-boton-primario-default: var(--Global-Neutrals-800);   /* #505050 */
+  --fondo-componente-boton-primario-hover: var(--Global-Neutrals-400);     /* #919191 */
+  --fondo-control-deshabilitado: var(--Global-Neutrals-200);               /* #d6d8d8 */
+  --fondo-superficie: var(--Global-Neutrals-white);                        /* #ffffff */
+}
+
+/* Texto */
+:root {
+  --texto-componente-boton-primario: var(--Global-Neutrals-white);         /* #ffffff */
+  --texto-cuerpo: var(--Global-Neutrals-800);                              /* #505050 */
+  --texto-boton-secundario-hover: var(--Global-Neutrals-400);              /* #919191 */
+  --texto-boton-secundario-disabled: var(--Global-Neutrals-200);           /* #d6d8d8 */
+  --texto-link-default: var(--Global-red);                                 /* #dc0028 */
+}
+
+/* Borde */
+:root {
+  --border-oscuro: var(--Global-Neutrals-800);                             /* #505050 */
+  --border-default: var(--Global-Neutrals-400);                            /* #919191 */
+  --border-claro: var(--Global-Neutrals-200);                              /* #d6d8d8 */
+}
+
+/* Espaciado — Botón grupo */
+:root {
+  --button-spacing-gap: 8px;
+  --button-spacing-horizontal-padding: 16px;
+  --button-spacing-vertical-padding: 8px;
+  --button-secondary-border-width: 2px;
+}
