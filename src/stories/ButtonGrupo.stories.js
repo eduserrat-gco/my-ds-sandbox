@@ -10,7 +10,7 @@ export default {
     },
     state: {
       control: 'select',
-      options: ['default', 'hover', 'disabled'],
+      options: ['default', 'hover', 'disabled', 'pressed'],
     },
     icon: { control: 'boolean' },
     label: { control: 'text' },
@@ -29,6 +29,10 @@ export const PrimaryDisabled = {
   args: { type: 'primary', state: 'disabled', icon: true, label: 'Guardar' },
 };
 
+export const PrimaryPressed = {
+  args: { type: 'primary', state: 'pressed', icon: true, label: 'Guardar' },
+};
+
 export const SecondaryDefault = {
   args: { type: 'secondary', state: 'default', icon: true, label: 'Cancelar' },
 };
@@ -39,6 +43,10 @@ export const SecondaryHover = {
 
 export const SecondaryDisabled = {
   args: { type: 'secondary', state: 'disabled', icon: true, label: 'Cancelar' },
+};
+
+export const SecondaryPressed = {
+  args: { type: 'secondary', state: 'pressed', icon: true, label: 'Cancelar' },
 };
 
 export const LinkDefault = {

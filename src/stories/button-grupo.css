@@ -1,78 +1,89 @@
 /* ── Botón grupo ── */
 
 .btn-grupo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1px;
   height: 30px;
-  min-width: 150px;
+  padding: 6px 12px;
   border: none;
   cursor: pointer;
-  padding: 0;
+  font-family: 'Catalana Sans', 'Segoe UI', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  white-space: nowrap;
+  box-sizing: border-box;
 }
 
 /* Primary */
 .btn-grupo--primary.btn-grupo--default {
   background: var(--fondo-componente-boton-primario-default);
+  border: 1px solid var(--border-oscuro);
+  color: var(--texto-componente-boton-primario);
 }
+
 .btn-grupo--primary.btn-grupo--hover {
   background: var(--fondo-componente-boton-primario-hover);
+  color: var(--texto-componente-boton-primario);
 }
+
 .btn-grupo--primary.btn-grupo--disabled {
   background: var(--fondo-control-deshabilitado);
+  color: var(--texto-componente-boton-primario);
   cursor: not-allowed;
+}
+
+.btn-grupo--primary.btn-grupo--pressed {
+  background: #dc0028;
+  border: 1px solid #dc0028;
+  color: var(--texto-componente-boton-primario);
 }
 
 /* Secondary */
 .btn-grupo--secondary {
   background: var(--fondo-superficie);
-  border-width: var(--button-secondary-border-width);
+  border-width: 2px;
   border-style: solid;
 }
+
 .btn-grupo--secondary.btn-grupo--default {
   border-color: var(--border-oscuro);
+  color: var(--texto-cuerpo);
 }
+
 .btn-grupo--secondary.btn-grupo--hover {
   border-color: var(--border-default);
+  color: var(--texto-boton-secundario-hover);
 }
+
 .btn-grupo--secondary.btn-grupo--disabled {
   border-color: var(--border-claro);
+  color: var(--texto-boton-secundario-disabled);
   cursor: not-allowed;
 }
 
-/* State layer */
-.btn-grupo__state-layer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--button-spacing-gap);
-  padding: var(--button-spacing-vertical-padding) var(--button-spacing-horizontal-padding);
-  height: 100%;
-}
-
-/* Labels */
-.btn-grupo--primary .btn-grupo__label {
-  color: var(--texto-componente-boton-primario);
-  font-family: 'Catalana Sans', sans-serif;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 16px;
-}
-.btn-grupo--secondary.btn-grupo--default .btn-grupo__label {
-  color: var(--texto-cuerpo);
-  font-size: 14px;
-}
-.btn-grupo--secondary.btn-grupo--hover .btn-grupo__label {
-  color: var(--texto-boton-secundario-hover);
-  font-size: 12px;
-}
-.btn-grupo--secondary.btn-grupo--disabled .btn-grupo__label {
-  color: var(--texto-boton-secundario-disabled);
-  font-size: 12px;
+.btn-grupo--secondary.btn-grupo--pressed {
+  border-color: #dc0028;
+  color: #dc0028;
 }
 
 /* Icon */
 .btn-grupo__icon {
-  color: var(--texto-componente-boton-primario);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
   font-size: 16px;
   line-height: 1;
+  flex-shrink: 0;
+}
+
+/* Label */
+.btn-grupo__label {
+  line-height: 16px;
 }
 
 /* Link */
@@ -80,10 +91,13 @@
   display: inline-flex;
   align-items: center;
 }
+
 .btn-grupo-link__label {
   color: var(--texto-link-default);
-  font-family: 'Catalana Sans', sans-serif;
+  font-family: 'Catalana Sans', 'Segoe UI', sans-serif;
   font-size: 12px;
+  font-weight: normal;
+  line-height: 16px;
   text-decoration: underline;
   cursor: pointer;
 }
