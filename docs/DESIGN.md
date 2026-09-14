@@ -52,6 +52,7 @@ El DS usa **CatalanaSans** como fuente corporativa principal.
 | Componente | Archivo | Storybook |
 |---|---|---|
 | Botón grupo | `docs/components/button-grupo.md` | `Botón grupo/` |
+| Textbox | `docs/components/textbox.md` | `Textbox/` |
 
 ---
 

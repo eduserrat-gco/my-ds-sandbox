@@ -37,3 +37,36 @@
   --button-spacing-vertical-padding: 8px;
   --button-secondary-border-width: 2px;
 }
+
+
+/* ── Textbox ── */
+
+/* Fondo */
+:root {
+  --fondo-componente-input-disabled: var(--Global-Neutrals-100);           /* #f4f4f4 */
+}
+
+/* Texto */
+:root {
+  --texto-brand: var(--Global-red);                                        /* #dc0028 */
+  --texto-error: var(--Global-redDark);                                    /* #b91e1e */
+  --texto-placeholder: var(--Global-Neutrals-200);                        /* #c7c7c7 */
+}
+
+/* Borde */
+:root {
+  --border-error: var(--Global-redDark);                                   /* #b91e1e */
+}
+
+/* Espaciado — Textbox */
+:root {
+  --textbox-height-desktop: 30px;
+  --textbox-height-mobile: 44px;
+  --textbox-padding: 6px;
+  --textbox-border-width-default: 1px;
+  --textbox-border-width-focus: 2px;
+  --textbox-border-width-error: 2px;
+  --textbox-icon-size: 24px;
+  --textbox-icon-outside-size: 32px;
+  --textbox-label-gap: 8px;
+}
