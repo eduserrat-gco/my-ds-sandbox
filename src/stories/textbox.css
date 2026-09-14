@@ -1,0 +1,122 @@
+/* ── Textbox ── */
+
+.textbox {
+  display: flex;
+  flex-direction: column;
+  gap: var(--textbox-label-gap);
+  width: 300px;
+  font-family: 'Catalana Sans', 'Segoe UI', sans-serif;
+}
+
+/* Label */
+.textbox__label {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--texto-cuerpo);
+}
+
+.textbox--mobile .textbox__label {
+  font-size: 14px;
+}
+
+.textbox__mandatory {
+  color: var(--texto-brand);
+}
+
+/* Input row */
+.textbox__row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+/* Input wrapper */
+.textbox__input-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  padding: var(--textbox-padding);
+  height: var(--textbox-height-desktop);
+  background: var(--fondo-superficie);
+  border: var(--textbox-border-width-default) solid var(--border-claro);
+  box-sizing: border-box;
+  gap: 8px;
+}
+
+.textbox--mobile .textbox__input-wrapper {
+  height: var(--textbox-height-mobile);
+}
+
+/* Estados del input wrapper */
+.textbox__input-wrapper--hover {
+  border-color: var(--border-default);
+}
+
+.textbox__input-wrapper--focus {
+  border-width: var(--textbox-border-width-focus);
+  border-color: var(--border-oscuro);
+}
+
+.textbox__input-wrapper--error {
+  border-width: var(--textbox-border-width-error);
+  border-color: var(--border-error);
+}
+
+.textbox__input-wrapper--disabled,
+.textbox__input-wrapper--solo\ lectura {
+  background: var(--fondo-componente-input-disabled);
+  border-color: var(--border-claro);
+}
+
+/* Placeholder */
+.textbox__placeholder {
+  flex: 1;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--texto-placeholder);
+  min-width: 0;
+}
+
+.textbox--mobile .textbox__placeholder {
+  font-size: 14px;
+}
+
+.textbox__placeholder--filled,
+.textbox__placeholder--focus,
+.textbox__placeholder--disabled,
+.textbox__placeholder--solo\ lectura {
+  color: var(--texto-cuerpo);
+}
+
+/* Icono inside */
+.textbox__icon-inside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--textbox-icon-size);
+  height: var(--textbox-icon-size);
+  flex-shrink: 0;
+  color: var(--texto-cuerpo);
+}
+
+/* Icono outside */
+.textbox__icon-outside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--textbox-icon-outside-size);
+  height: var(--textbox-icon-outside-size);
+  flex-shrink: 0;
+  color: var(--texto-cuerpo);
+}
+
+/* Mensaje de error */
+.textbox__error {
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--texto-error);
+}
